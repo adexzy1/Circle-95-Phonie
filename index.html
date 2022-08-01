@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,40 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <h2>make some magic here!!</h2>
+
+    <div class="container">
+        <form action="" class="form">
+            <h3 class="sign-up">Sign Up</h3>
+            <p>Complete this simple Steps</p>
+            <div class="form-div">
+                <label for="firstname" class="form-label">Fullname</label>
+                <input type="text" id="firstname" />
+            </div>
+            <div class="form-div">
+                <label for="number" class="form-label">Phone Number</label>
+                <div class="phone-number">
+                    <div class="phone-input">
+                        <!-- onkeypress="return phoneNumberFormat(event)" -->
+                        <input type="tel" pattern="^(3-)?[0-9]{4}-[0-9]{3}-[0-9]{4}" oninput="formatPhoneNum(this)"
+                            id="number" required />
+                    </div>
+                    <div class="carrier-logo">
+                        <div>
+                            <img src="/phone icon.png" width="20" id="logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
