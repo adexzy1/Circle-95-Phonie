@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
+    <header>
+      <div class="logo">Phonie</div>
+    </header>
 
     <div class="container">
-        <form action="" class="form">
-            <h3 class="sign-up">Sign Up</h3>
-            <p>Complete this simple Steps</p>
-            <div class="form-div">
-                <label for="firstname" class="form-label">Fullname</label>
-                <input type="text" id="firstname" />
-            </div>
-            <div class="form-div">
-                <label for="number" class="form-label">Phone Number</label>
-                <div class="phone-number">
-                    <div class="phone-input">
-                        <!-- onkeypress="return phoneNumberFormat(event)" -->
-                        <input type="tel" pattern="^(3-)?[0-9]{4}-[0-9]{3}-[0-9]{4}" oninput="formatPhoneNum(this)"
-                            id="number" required />
-                    </div>
-                    <div class="carrier-logo">
-                        <div>
-                            <img src="/phone icon.png" width="20" id="logo" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-<button class="submit">Submit</button>
-        </form>
-        <div>
-            <p class="footnote">
-                Built by <b> Circle 95</b>. Enjoy the
-                rest of the day!
-            </p>
+      <form class="form">
+        <h3 class="title">Purchase Airtime</h3>
+
+        <p class="sub-title">Complete this simple Steps</p>
+
+        <div class="form-group">
+          <label for="firstname" class="form-label">Full Name</label>
+          <input type="text" id="firstname" class="input" />
         </div>
 
+        <div class="phone_number-input-cobtainer">
+          <div class="form-group">
+            <label for="number" class="form-label">Phone Number</label>
+            <!-- onkeypress="return phoneNumberFormat(event)" -->
+            <input
+              type="tel"
+              pattern="^(3-)?[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              oninput="formatPhoneNum(this)"
+              id="number"
+              class="input"
+              required
+            />
+          </div>
 
+          <div class="carrier-logo">
+            <img src="/phone icon.png" width="20" id="logo" />
+          </div>
+        </div>
+      </form>
     </div>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
-
+  </body>
 </html>
