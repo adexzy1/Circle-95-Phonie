@@ -73,19 +73,15 @@ function startApp() {
       switch (valueOfFunc) {
         case 'MTN':
           networkImage.src = './mtn.png';
-          console.log(valueOfFunc);
           break;
         case 'ETISALAT':
           networkImage.src = './etisalat.png';
-          console.log(valueOfFunc);
           break;
         case 'GLO':
           networkImage.src = './glo.jpg';
-          console.log(valueOfFunc);
           break;
         case 'AIRTEL':
           networkImage.src = './airtel.png';
-          console.log(valueOfFunc);
           break;
         default:
           networkImage.src = './phone-icon.png';
