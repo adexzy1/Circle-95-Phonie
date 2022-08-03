@@ -8,7 +8,8 @@ function startApp() {
   const phoneNumber = document.querySelector('#number');
 
   // regex to check if number is in correct format
-  const regNumber = /^(\+\d{3}|[0-9])\d{3}$/;
+  const regNumber = /^(\+\d{3}|[0-9])\d{3,}$/;
+  // const regNumber2 = /^(\+\d{3}|[0-9])\d{10}$/;
 
   // network provider number prefix
   const networkprovider = new Map([
